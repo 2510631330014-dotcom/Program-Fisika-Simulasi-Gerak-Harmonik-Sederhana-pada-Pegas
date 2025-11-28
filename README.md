@@ -13,15 +13,14 @@ omega = math.sqrt(k / m)
 
 t = 0
 dt = 0.05
-t_max = 10  # lama simulasi 10 detik
+t_max = 10
 
 time_data = []
 x_data = []
 
 while t <= t_max:
-    x = A * math.cos(omega * t)  # posisi benda
+    x = A * math.cos(omega * t)
 
-    # If condition — cek batas tertentu (opsional)
     if abs(x) > A:
         print("Error: posisi benda melebihi batas amplitudo.")
         break
@@ -39,3 +38,5 @@ plt.xlabel("Waktu (s)")
 plt.ylabel("Posisi (m)")
 plt.grid(True)
 plt.show()
+
+
